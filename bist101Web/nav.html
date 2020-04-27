@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">Bist101</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="account.php">Home</a></li>
+        <li><a href="#">The Sandbox</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Premium<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="coursework.php">Course work</a></li>
+            <li><a href="notes.php">Notes</a></li>
+            <li><a href="pastpapers.php">Past papers</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="tutorials.php">Tutorials</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="timetable.php">Timetable</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.php">About</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['studname']; ?><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Auto download notes</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="logout.php">Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
